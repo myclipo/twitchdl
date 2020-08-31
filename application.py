@@ -163,6 +163,6 @@ def version():
     }
     return jsonify(result)
 
-app = Flask(__name__)
-app.register_blueprint(api)
-app.config.from_pyfile('../application.cfg', silent=True)
+application = Flask(__name__)
+application.register_blueprint(api)
+application.config.from_pyfile('../application.cfg', silent=True)
