@@ -5,9 +5,8 @@ import sys
 
 from flask import Flask, Blueprint, current_app, jsonify, request, redirect, abort
 import youtube_dl
-from youtube_dl.version import __version__ as youtube_dl_version
 
-from .version import __version__
+from youtube_dl.version import __version__ as youtube_dl_version
 
 
 if not hasattr(sys.stderr, 'isatty'):
@@ -160,7 +159,7 @@ def info():
 def version():
     result = {
         'youtube-dl': youtube_dl_version,
-        'youtube-dl-api-server': __version__,
+        'youtube-dl-api-server': '0.4',
     }
     return jsonify(result)
 
