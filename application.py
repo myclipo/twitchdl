@@ -166,3 +166,5 @@ def version():
 application = Flask(__name__)
 application.register_blueprint(api)
 application.config.from_pyfile('../application.cfg', silent=True)
+if __name__ == "__main__":
+    application.run()

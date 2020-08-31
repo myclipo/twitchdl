@@ -14,3 +14,8 @@ docs/_build
 
 # configuration file for the app
 application.cfg
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
